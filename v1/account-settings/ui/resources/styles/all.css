@@ -1,0 +1,97 @@
+
+html { height:100%; margin:0; padding:0; }
+body { width:1280px; background:#ebebeb; height:100%; margin:0; padding:0; overflow-x:hidden; color:#323232; font-family:"nintendo_NTLG-DB_001", sans-serif; }
+h1,h2,h3,h4,h5,h6,div,p,ul,ol,li,dl,dt,dd,form { margin:0; padding:0; font-weight:normal; }
+
+ul,li { list-style-type:none; }
+img { border:none; }
+input, select, button { font-family:"nintendo_NTLG-DB_001", sans-serif; line-height:1; }
+a { color:#323232; }
+.none { display: none; }
+#wiiu { width:1280px; height:720px; }
+
+
+/*-- ƒ{ƒ^ƒ“ --*/
+
+.btn_001 { 
+    background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.5, #ffffff), color-stop(0.8, #f6f6f6), color-stop(0.96, #f5f5f5), to(#bbbbbb)); 
+    border-radius:50px; box-shadow:0 3px 10px 0 #555555; text-align:center; margin:10px; padding:auto; text-decoration:none; cursor:pointer; }
+.btn_002 { 
+    background:-webkit-gradient(linear, left top, left bottom, from(#ffffff), color-stop(0.5, #ffffff), color-stop(0.8, #f6f6f6), color-stop(0.96, #f5f5f5), to(#bbbbbb)); 
+    border-radius:12px; box-shadow:0 3px 10px 0 #555555; text-align:center; margin:10px; padding:auto; text-decoration:none; cursor:pointer; }
+.btn_005 { 
+    background:-webkit-gradient(linear, left top, left bottom, from(#575757), color-stop(0.5, #575757), color-stop(0.8, #4b4b4b), color-stop(0.96, #353535), to(#232323)); 
+    border:1px #333333 solid; border-radius:12px; box-shadow:0 3px 10px 0 #555555; text-align:center; margin:10px; padding:auto; color:#ffffff; text-decoration:none; cursor:pointer; 
+    text-shadow:2px 2px 2px #555555; filter:dropshadow(color=#555555, offx=1, offy=1);
+    color:#ffffff;}
+a.btn_005  {color:#ffffff; display:block;}
+
+/*-- ƒZƒŒƒNƒgƒ{ƒbƒNƒX --*/
+
+select { border:2px #747474 solid; border-radius:10px; }
+
+/*-- “ü—Í—“ --*/
+
+.textbox{ background:#ffffff; border:2px #8d8d8d solid; border-radius:10px; color:#828282; box-shadow: 0 2px 6px 1px #aaaaaa inset; }
+
+
+/*-- ƒwƒbƒ_[ --*/
+
+#networksetting_header { width:1280px; height:120px; background:url(../image/bg_networksetting_head.png); }
+#networksetting_header h1 { line-height:60px; text-align:center; margin:auto; font-size:27px; color:#ffffff; }
+
+
+/*-- ƒRƒ“ƒeƒ“ƒc•”•ª --*/
+
+#networksetting_contents { padding:25px 0 45px 0; }
+#networksetting_comment { line-height:1.5; margin:0 0 25px 65px; font-size:26px; }
+#networksetting_comment2 { line-height:1.5; margin:0 0 25px 65px; font-size:26px; }
+.networksetting_cts_wrap { width:1150px; min-height:170px; background:#f7f7f7; border-radius:12px; margin:0 0 20px 65px; clear:both; position:relative; }
+.networksetting_cts_wrap_ID { width:1150px; display:table-cell; vertical-align:middle; background:#ffffff; border-radius:12px; margin:0 0 20px 65px; padding:10px 0 10px 0; clear:both; position:relative; }
+.networksetting_cts_wrap h2 { height:30px; line-height:30px; margin:10px 0 12px 18px; padding:0 0 0 11px; border-left:10px #4d006c solid; font-size:27px; }
+.networksetting_cts_p { width:660px; line-height:1.5; margin:0 0 10px 40px; font-size:26px; float:left; }
+.networksetting_cts_wrap_ID p{ padding-left:18px; line-height:1.5; font-size:26px;}
+.networksetting_go { margin:0 30px 35px 20px; float:right; }
+.networksetting_go a { display:block; width:355px; height:60px; line-height:60px; text-align:center; margin:auto; font-size:26px; color:#323232; text-decoration:none; }
+
+.success { position:absolute; top:10px; right:20px; color:#53bc2d; font-size:26px; font-weight:bold; }
+.note { color:#999; }
+.purple { color:#6700b7; }
+.hide { display: none; }
+ 
+#networksetting_stop { width:500px; height:65px; line-height:65px; text-align:center; margin:15px auto 0 auto; font-size:27px; }
+
+.networksetting_cts_dl { padding:12px 0 0 25px; }
+.networksetting_cts_dl dt { display:table-cell; vertical-align:middle; width:310px; min-height:42px; text-align:right; padding:12px 0 12px 0; font-size:26px; clear:both; float:left; }
+.networksetting_cts_dl dd { width:760px; text-align:left; padding:12px 0 12px 15px; font-size:26px; float:left; }
+.input_long { width:700px; height:45px; padding: 0 10px; font-size:26px; }
+.input_short { width:302px; height:45px; padding: 0 10px; font-size:26px; }
+.select_long { padding-left:10px; padding-right: 10px; border: 0; background: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(.5,#fff),color-stop(.95,#f7f7f7),to(#e6e6e6))0 0; box-shadow: 0 3px 10px rgba(0,0,0,.6); line-height: 2; -webkit-appearance: none; appearance: none; width:720px; height:65px; margin:0; font-size:26px; }
+.select_short { padding-left:10px; padding-right: 10px; border: 0; background: -webkit-gradient(linear,left top,left bottom,from(#fff),color-stop(.5,#fff),color-stop(.95,#f7f7f7),to(#e6e6e6))0 0; box-shadow: 0 3px 10px rgba(0,0,0,.6); line-height: 2; -webkit-appearance: none; appearance: none; width:480px; height:65px; margin:0; font-size:26px; }
+.ncd_alert { margin:10px 0 0 0; color:#1a0081; }
+
+#networksetting_cts_submit { margin:5px 0 0 120px; }
+#networksetting_cts_submit li { float:left; }
+#networksetting_cts_submit li input { display:block; width:500px; height:75px; line-height:75px; font-size:27px; text-decoration:none; border:none; }
+#networksetting_cts_submit li a,
+#networksetting_cts_submit li button { display:block; width:500px; height:75px; line-height:75px; font-size:27px; text-decoration:none; }
+
+.networksetting_cts_odp { margin:25px 0 0 25px; font-size:26px; }
+.networksetting_cts_odp dt { margin:0 0 25px 0; }
+.networksetting_cts_odp dd { margin:0 0 25px 45px; }
+
+.networksetting_cts_dl dd label { margin:0 1em 0 0; }
+.networksetting_cts_dl dd label input { width:41px; height:41px; margin:-5px 0 0 0; padding:5px; vertical-align:middle; }
+.networksetting_cts_odp dd label { margin:0 1em 0 0; }
+.networksetting_cts_odp dd label input { width:41px; height:41px; margin:-5px 0 0 0; padding:5px; vertical-align:middle; }
+
+
+/*-- clearfix --*/
+
+.clearfix:after { content:"."; display:block; height:0; clear:both; visibility:hidden; }  
+.clearfix { display:inline-table; }
+
+.break-word {
+		word-wrap: break-word;
+}
+
