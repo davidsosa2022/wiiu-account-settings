@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='/v1/account-settings/ui/resources/styles/all.css' rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src='/v1/account-settings/ui/resources/js/common.js'></script>
+</head>
+<body id="off-device-body">
+<div id="wiiu">
+	<div id="networksetting_header">
+	  <h1>Usage from PCs and Other Devices</h1>
+	</div>
+	
+	<div id="networksetting_contents">
+        <p id="networksetting_comment">This setting allows you to access Nintendo Network services<br/>(such as posting to Miiverse) from non-Nintendo devices like<br/>PCs and smartphones.</p>	
+		<form id="offDeviceForm" action="/v1/account-settings/ui/profile/off-device" method="POST">
+
+			<div class="networksetting_cts_wrap clearfix">
+			  <dl class="networksetting_cts_odp">
+			    <dt>Do you want to use Nintendo Network services from PCs and other devices?</dt>
+			    <dd>
+			      <label class="radiobtn"><input data-sound="SE_ACCOUNT_RADIOBUTTON_CHECK" id="offDeviceFlagY" name="offDeviceFlag" type="radio" value="Y" checked="checked"/>Use</label>
+			      <label class="radiobtn"><input data-sound="SE_ACCOUNT_RADIOBUTTON_CHECK" id="offDeviceFlagN" name="offDeviceFlag" type="radio" value="N"/>Don't Use</label>
+			    </dd>	
+			  </dl>
+			</div>
+	
+			<ul id="networksetting_cts_submit" class="clearfix">
+			  <li><a data-sound="SE_ACCOUNT_CANCEL" href='/v1/account-settings/ui/profile/' id="cancel" class="btn_002 backOrCancel">Cancel</a></li>
+			  <li><input data-sound="SE_ACCOUNT_OK" type="submit" id="submit" value="Confirm Information" class="btn_002 btn-submit" /></li>
+			</ul>
+
+		</form>
+	</div>
+</div>
+</body>
+</html>

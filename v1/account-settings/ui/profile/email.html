@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='/v1/account-settings/ui/resources/styles/all.css' rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src='/v1/account-settings/ui/resources/js/common.js'></script>
+</head>
+
+<body id="email-body">
+
+<div id="wiiu">
+
+    <div id="networksetting_header">
+        <h1>Change E-mail Address</h1>
+    </div>
+
+    <div id="networksetting_contents">
+        <p id="networksetting_comment">Change your e-mail address.<br><span class="note">For users under the age of 13, the e-mail address of<br>a parent or guardian should be set.</span></p>
+        <form id="emailForm" action="/v1/account-settings/ui/profile/email" onsubmit="return submitEmailChangeForm();" method="POST">
+            <p id="networksetting_comment2" class="purple none">There is a problem with the information you entered.<br>Check the items with an error displayed.</p>
+
+            <input type="hidden" name="emailChange.originalEmail" value="dwyazzo2000@gmail.com"/>
+
+            <div class="networksetting_cts_wrap break-word">
+                <dl class="networksetting_cts_dl clearfix">
+                    <dt>Current e-mail address:</dt>
+                    <dd>dwyazzo2000@gmail.com</dd>
+
+                    <dt>E-mail confirmation:</dt>
+                    <dd>Complete</dd>
+
+                    <dt><label for="newEmail">New e-mail address:</label></dt>
+                    
+                    <dd><input id="newEmail" name="emailChange.address" keyboard="qwerty" invalidchar="space" guidestring="Enter the new e-mail address." class="textbox input_long" type="text" value="" maxlength="256"/>
+                        <p id="newEmailAlert" class="ncd_alert none">The e-mail address you entered is invalid.</p>
+
+                        <p id="newEmailBlank" class="ncd_alert none">You have left this field blank.</p>
+
+                        <p id="newEmailAlert3" class="ncd_alert none">This is identical to the current e-mail address.</p>
+                    </dd>
+
+                    <dt><label for="confirmNewEmail">New e-mail address:<br>(Confirm)</label></dt>
+                    
+                    <dd><input id="confirmNewEmail" name="emailChange.confirmNewEmail" keyboard="qwerty" invalidchar="space" guidestring="Enter the new e-mail address again to confirm." class="textbox input_long" type="text" value="" maxlength="256"/>
+                        <p id="confirmNewEmailBlank" class="ncd_alert none">You have left this field blank.</p>
+
+                        <p id="confirmEmailAlert3" class="ncd_alert none">The e-mail addresses you entered do not match.</p>
+                    </dd>
+                </dl>
+            </div>
+
+            <ul id="networksetting_cts_submit" class="clearfix">
+                <li><a data-sound="SE_ACCOUNT_CANCEL" href='/v1/account-settings/ui/profile/' id="cancel" class="btn_002 backOrCancel">Cancel</a></li>
+                <li><input data-sound="SE_ACCOUNT_OK" type="submit" id="submit" name="confirm" value="Confirm Information" class="btn_002 btn-submit"/></li>
+            </ul>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

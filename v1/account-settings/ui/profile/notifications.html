@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='/v1/account-settings/ui/resources/styles/all.css' rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src='/v1/account-settings/ui/resources/js/common.js'></script>
+</head>
+
+<body id="notifications-body">
+<div id="wiiu">
+    <div id="networksetting_header">
+        <h1>E-mail Preference</h1>
+    </div>
+
+    <div id="networksetting_contents">
+        <p id="networksetting_comment">Opt in to or out of receiving e-mails with information about special<br>promotions and new software from Nintendo.</p>
+
+        <form id="nsform" action="/v1/account-settings/ui/profile/notifications" method="POST">
+            <input type="hidden" name="validatedEmail" id="validatedEmail" value="Y"/>
+
+            <div class="networksetting_cts_wrap clearfix">
+                <dl class="networksetting_cts_dl">
+
+                    <dt>E-mail address to use:</dt>
+                    <dd>dwyazzo2000@gmail.com</dd>
+
+                    <dt>E-mail Preference:</dt>
+                    <dd> 
+                        <label for="optInFlagY" class="radiobtn">
+                            <input data-sound="SE_ACCOUNT_RADIOBUTTON_CHECK" id="optInFlagY" name="optInFlag" class="optInFlag" type="radio" value="Y"/>Opt In
+                        </label>
+                            
+                        <label for="optInFlagN" class="radiobtn">
+                            <input data-sound="SE_ACCOUNT_RADIOBUTTON_CHECK" id="optInFlagN" name="optInFlag" class="optInFlag" type="radio" value="N" checked="checked"/>Opt Out
+                        </label>
+                        <div class="note" id="msgMarketing">If Opt In is selected, only the setting for the current<br/>user will be updated. If Opt Out is selected, the<br />setting will be changed for all users who have<br />registered with the same e-mail address.</div>
+                    </dd>
+                </dl>
+
+            </div>
+            <ul id="networksetting_cts_submit" class="clearfix">
+                <li><a data-sound="SE_ACCOUNT_CANCEL" href='/v1/account-settings/ui/profile/' id="cancel" class="btn_002 backOrCancel">Cancel</a></li>
+                <li><input type="button" data-sound="SE_ACCOUNT_OK" onclick="submitEmailFlagForm();" id="submitFormId" value="Confirm Information" class="btn_002 btn-submit"/></li>
+            </ul>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

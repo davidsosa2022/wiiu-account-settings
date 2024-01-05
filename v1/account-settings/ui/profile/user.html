@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='/v1/account-settings/ui/resources/styles/all.css' rel="stylesheet" type="text/css" media="all" />
+    <script type="text/javascript" src='/v1/account-settings/ui/resources/js/common.js'></script>
+</head>
+<body id="user-0-body" class="user-body">
+<div id="wiiu">
+    <div id="networksetting_header">
+        <h1>Personal Information</h1>
+    </div>
+    <div id="networksetting_contents">
+            <p id="networksetting_comment">Edit your personal information.</p>
+
+        <form id="nsform" action="user" method="POST">
+            <div class="networksetting_cts_wrap clearfix">
+                <h2>Basic Information</h2>
+                <dl class="networksetting_cts_dl clearfix">
+                    <dt>Birth date:</dt>
+                    <dd>11/10/2001<span class="note">(Your birth date cannot be changed.) </span></dd>
+                    <dt>Gender:</dt>
+                    <dd>
+                        <label class="radiobtn">
+                            <input data-sound="SE_ACCOUNT_RADIOBUTTON_CHECK" id="genderM" name="person.gender" type="radio" value="M" checked="checked"/>Male
+                        </label>
+                        <label class="radiobtn">
+                            <input data-sound="SE_ACCOUNT_RADIOBUTTON_CHECK" id="genderF" name="person.gender" type="radio" value="F"/>Female
+                        </label>
+                    </dd>
+                </dl>
+            </div>
+            <div class="networksetting_cts_wrap clearfix">
+                <h2>Address</h2>
+                <dl class="networksetting_cts_dl clearfix">
+                        <dt>
+                        <label for="address.province">State/Province:</label>
+                        </dt>
+                        <dd>
+                        <select id="address.province" name="address.province" class="select_short"><option value="822083584">Unspecified</option><option value="822345728">Alabama</option><option value="822280192">Alaska</option><option value="822476800">Arizona</option><option value="822411264">Arkansas</option><option value="822542336">California</option><option value="822607872">Colorado</option><option value="822673408">Connecticut</option><option value="822738944">Delaware</option><option value="822214656">District of Columbia</option><option value="822804480">Florida</option><option value="822870016">Georgia</option><option value="822935552">Hawaii</option><option value="823066624">Idaho</option><option value="823132160">Illinois</option><option value="823197696">Indiana</option><option value="823001088">Iowa</option><option value="823263232">Kansas</option><option value="823328768">Kentucky</option><option value="823394304">Louisiana</option><option value="823590912">Maine</option><option value="823525376">Maryland</option><option value="823459840">Massachusetts</option><option value="823656448">Michigan</option><option value="823721984">Minnesota</option><option value="823853056">Mississippi</option><option value="823787520">Missouri</option><option value="823918592">Montana</option><option value="824115200">Nebraska</option><option value="824377344">Nevada</option><option value="824180736">New Hampshire</option><option value="824246272">New Jersey</option><option value="824311808">New Mexico</option><option value="824442880">New York</option><option value="823984128">North Carolina</option><option value="824049664">North Dakota</option><option value="824508416">Ohio</option><option value="824573952">Oklahoma</option><option value="824639488">Oregon</option><option value="824705024">Pennsylvania</option><option value="825556992">Puerto Rico</option><option value="824770560">Rhode Island</option><option value="824836096">South Carolina</option><option value="824901632">South Dakota</option><option value="824967168">Tennessee</option><option value="825032704">Texas</option><option value="825098240">Utah</option><option value="825229312">Vermont</option><option value="825163776">Virginia</option><option value="825294848">Washington</option><option value="825425920">West Virginia</option><option value="825360384" selected="selected">Wisconsin</option><option value="825491456">Wyoming</option></select>
+                        </dd>
+                    <dt>Country:</dt>
+                    <dd>United States</dd>
+                </dl>
+            </div>
+
+            <div class="networksetting_cts_wrap clearfix">
+                <h2><label for="timezone">Time Zone</label></h2>
+
+                <dl class="networksetting_cts_dl clearfix">
+                    <dt></dt>
+                    <dd>
+                    <select id="timezone" name="timezone" class="select_long"><option value="Pacific/Midway">(UTC-11:00) Midway Island, Samoa</option><option value="America/Adak">(UTC-10:00) Adak</option><option value="Pacific/Honolulu">(UTC-10:00) Hawaii</option><option value="America/Anchorage">(UTC-09:00) Alaska</option><option value="America/Los_Angeles">(UTC-08:00) Pacific Time (US &amp; Canada)</option><option value="America/Boise">(UTC-07:00) Mountain Time (US &amp; Canada)</option><option value="America/Phoenix">(UTC-07:00) Arizona</option><option value="America/Chicago" selected="selected">(UTC-06:00) Central Time (US &amp; Canada)</option><option value="America/Indiana/Knox">(UTC-06:00) Indiana (Central)</option><option value="America/Indiana/Indianapolis">(UTC-05:00) Indiana (East)</option><option value="America/New_York">(UTC-05:00) Eastern Time (US &amp; Canada)</option><option value="America/Puerto_Rico">(UTC-04:00) Georgetown, La Paz, San Juan</option><option value="Pacific/Guam">(UTC+10:00) Guam, Port Moresby</option><option value="Pacific/Wake">(UTC+12:00) Wake Island</option></select>
+                    </dd>
+                </dl>
+            </div>
+
+            <input id="surname" name="surname" type="hidden" value=""/>
+            <input id="givenName" name="givenName" type="hidden" value=""/>
+            <input id="sySurname" name="sySurname" type="hidden" value=""/>
+            <input id="syGivenName" name="syGivenName" type="hidden" value=""/>
+
+            <ul id="networksetting_cts_submit" class="clearfix">
+                <li><a href='/v1/account-settings/ui/profile/' data-sound="SE_ACCOUNT_CANCEL" id="cancel" class="btn_002 backOrCancel">Cancel</a></li>
+                <li><input type="button" onclick="submitUserInfoForm();" data-sound="SE_ACCOUNT_OK" id="submitFormId" value="Confirm Information" class="btn_002 btn-submit"/></li>
+            </ul>
+
+        </form>
+    </div>
+</div>
+</body>
+</html>
