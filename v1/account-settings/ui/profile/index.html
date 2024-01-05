@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<link href='/v1/account-settings/ui/resources/styles/all.css' rel="stylesheet" type="text/css" media="all" />
+<script type="text/javascript" src='/v1/account-settings/ui/resources/js/common.js'></script>
+</head>
+
+<body id="menu-body">
+<div id="wiiu">
+    <div id="networksetting_header">
+        <h1>Pretendo Network ID Settings</h1>
+    </div>
+
+    <div id="networksetting_contents">
+        <p id="networksetting_comment">Pretendo Network ID</p>
+           <div class="networksetting_cts_wrap_ID clearfix">
+             <p id="user_name" class="networksetting_cts_ID purple">dwyazzo90</p>
+            </div>
+        <p id="networksetting_comment">
+            Select an option to configure.<br><span class="note">(You can scroll this screen by sliding the stylus.)</span>
+        </p>
+        <div id="topmenu">
+            <div class="networksetting_cts_wrap clearfix">
+                <h2>Edit Personal Information</h2>
+                <p class="networksetting_cts_p">Edit personal information, such as your address.</p>
+                <p class="networksetting_go"><a data-sound="SE_ACCOUNT_OK" href='/v1/account-settings/ui/profile/user.html' id="user" class="btn_001 btn-submit">Edit</a></p>
+            </div>
+
+            <div class="networksetting_cts_wrap clearfix">
+                <h2>Change E-mail Address</h2>
+                <p class="networksetting_cts_p">Change your registered e-mail address.</p>
+                <p class="networksetting_go"><a data-sound="SE_ACCOUNT_OK" href='/v1/account-settings/ui/profile/email.html' id="email" class="btn_001 btn-submit">Change</a></p>
+            </div>
+
+            <div class="networksetting_cts_wrap clearfix">
+                <h2>E-mail Preference</h2>
+                <p class="networksetting_cts_p">Opt in to or out of receiving e-mails with<br>information about special promotions and<br>new software from Nintendo.</p>
+                <p class="networksetting_go"><a data-sound="SE_ACCOUNT_OK" href='/v1/account-settings/ui/profile/notifications.html' id="notifications" class="btn_001 btn-submit">Set Up</a></p>
+            </div>
+
+            <div class="networksetting_cts_wrap clearfix">
+                <h2>Usage from PCs and Other Devices</h2>
+                <p class="networksetting_cts_p">Set up this option to access Nintendo Network<br>services from PCs, smartphones, and other<br>non-Nintendo devices.</p>
+                <p class="networksetting_go"><a data-sound="SE_ACCOUNT_OK" href='/v1/account-settings/ui/profile/off-device.html' id="offdevice" class="btn_001 btn-submit">Set Up</a></p>
+            </div>
+        </div>
+
+        <p id="networksetting_stop"><a class="btn_005" onclick="wiiuSound.playSoundByName('SE_ACCOUNT_EXIT', 1);wiiuBrowser.jumpToBaristaAccount();" id="exit">Exit</a></p>
+    </div>
+
+</div>
+
+</body>
+</html>
